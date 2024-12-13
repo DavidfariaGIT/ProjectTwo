@@ -1,6 +1,13 @@
 import React from "react";
+import { useEffect } from "react";
 
 function Background() {
+   
+    useEffect(() => {
+  
+        document.title = 'The Local Project';
+      }, []);
+    
     return (
         <main className="topHeaderContainer"> 
             <div className="mainImageTxt">
