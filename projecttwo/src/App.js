@@ -1,13 +1,13 @@
 import Header from './header';
+import FSimage from './FSImage';
 import './App.css';
-import './IMAGES'
-
 
 
 function App() {
   return (
     <>
     <Header />
+    <FSimage />
     </>
   )
 }
