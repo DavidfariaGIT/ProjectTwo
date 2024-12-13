@@ -45,8 +45,37 @@ function FSimage() {
                     <h3>Waitī House by Crosson Architects and Ko & Ko</h3>
                     <p>Designed to embrace the wild terrain of its locale, Waitī House captures warmth, comfort, and natural connection through a stone-and-timber palette built around premium oak flooring from Forté.</p>
                 </div>
+                <div className="item">
+                <img className="gal_img" src="IMAGES/Yukari-House-by-Tanev-Muir-Architects-Video-Feature-The-Local-Project-Image-12.jpg" alt="The Shepherds Hut by Fearon Hay"/>
+                <h3>The Shepherds Hut by Fearon Hay</h3>
+                <p id="p4">
+                    Walking along Manhattan's Wall Street, a large black flag with Aesop in white text may be the last thing one would expect to see.
+                </p>
+                </div> 
             </div>
-        </section>
+            <section className="books_Container">
+            <div>
+                <img className="booksImage" src="IMAGES/BOOKS.jpg" alt="Book collection" />
+            </div>
+            <div>
+                <h3 id="bookh3">BOOK</h3>
+            </div>
+            <div>
+                <h1>Habitats: City, Coast and Forest</h1>
+            </div>
+            <div>
+                <p id="bookPara">
+                    Introducing *Habitats: City, Coast and Forest*, the latest addition to The Local Project's collection of timeless publications.<br /><br />
+                    This trio of hardcover books features 600 pages of extraordinary homes from across Australia, New Zealand, North America, and Canada. The collection masterfully captures the work of industry-leading design practices such as Smart Design Studio, Wardle, James Stockwell, Olson Kundig, Fearon Hay, Aires Mateus, Rob Mills Architecture & Interiors, Faulkner Architects, and Atelier L’Abri.<br /><br />
+                    Each volume is a testament to a deeply considered architectural expression that goes beyond mere shelter and includes 10 such examples that demonstrate a harmonious connection with its natural surroundings.
+                </p>
+            </div>
+            <div>
+                <button className="headerButtonLeft">ORDER NOW</button>
+            </div>
+            <hr />
+         </section>
+         </section>
     );
 }
 
