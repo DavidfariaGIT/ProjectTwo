@@ -1,7 +1,8 @@
 import React from 'react';
 
-function FSimage() {
+function FSimage(props) {
     return (
+        
         <section className="FSimageContainer">
             <p className="FSpara">A DESIGNER'S GUIDE TO SOFAS: ALEXANDRA DONOHOE<br />CHURCH OF DECUS INTERIORS</p>
             <img className="FSimage" src="IMAGES/Yukari-House-by-Tanev-Muir-Architects-Video-Feature-The-Local-Project-Image-4.jpg" alt="Feature image" />
@@ -69,14 +70,23 @@ function FSimage() {
                     This trio of hardcover books features 600 pages of extraordinary homes from across Australia, New Zealand, North America, and Canada. The collection masterfully captures the work of industry-leading design practices such as Smart Design Studio, Wardle, James Stockwell, Olson Kundig, Fearon Hay, Aires Mateus, Rob Mills Architecture & Interiors, Faulkner Architects, and Atelier L’Abri.<br /><br />
                     Each volume is a testament to a deeply considered architectural expression that goes beyond mere shelter and includes 10 such examples that demonstrate a harmonious connection with its natural surroundings.
                 </p>
+                <div className="bookTitles">
+                <div className="bookItems"><p> <strong>Author:</strong> {props.author}</p></div>
+                <div className="bookItems"><p> <strong>Date:</strong> {props.date}</p></div>
+                <div className="bookItems"><p> <strong>Title:</strong> {props.title}</p></div>
+                </div>
             </div>
             <div>
                 <button className="headerButtonLeft">ORDER NOW</button>
             </div>
+           
             <hr />
          </section>
          </section>
+         
+
     );
 }
+
 
 export default FSimage 

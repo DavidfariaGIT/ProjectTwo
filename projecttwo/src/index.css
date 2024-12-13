@@ -349,6 +349,23 @@ position: fixed;
   width: 1000px;
 }
 
+.bookTitles{
+  display: flex;
+  justify-content: center;
+  margin-top: -90px;
+ 
+}
+
+.bookItems {
+ padding: 0px 40px 0px 40px;
+}
+.bookItems p {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #5B3228;
+ }
+
+
 /* Tablet Size */
 @media (max-width: 1024px) {
   main {
