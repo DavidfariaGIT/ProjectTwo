@@ -1,10 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 
-
-
-
-
 function Header(props) {
 
       const [clicked, setClicked] = useState(false);
