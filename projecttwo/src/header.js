@@ -1,9 +1,21 @@
 import React from 'react';
+import { useState } from 'react';
 
 
 
 
-function Header() {
+
+function Header(props) {
+
+      const [clicked, setClicked] = useState(false);
+      const handleClick = () => {
+        setClicked(!clicked)
+
+        if (props.onClick) {
+            props.onClick();  
+          }
+        };
+
     return (
         <header className="stickyHeader">
 
@@ -17,7 +29,7 @@ function Header() {
 
             <section className="header_container">
                 <div>
-                    <button className="headerButtonLeft">Subscribe</button>
+                <button onClick={handleClick} className="headerButtonLeft"> {clicked ? props.clickedLabel : props.label}</button>
                     <img className="eyeglass" src="IMAGES/eyeglass.png" alt="Eyeglass" />
                 </div>
                 <div>

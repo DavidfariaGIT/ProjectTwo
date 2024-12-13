@@ -4,16 +4,19 @@ import Background from './Background';
 
 
 
-
 function App() {
+  const handleButtonClick = () => {
+    alert("Subscribed");
+  }
   return (
     <>
-    <Header />
+    <Header label="Subscribe" clickedLabel="Subscribed!" onClick={handleButtonClick} />
     <FSimage author="Akeria" date={1997} title="Twisted Lies"/>
     <Background />
 
     </>
   )
-}
+ }
+
 
 export default App;
